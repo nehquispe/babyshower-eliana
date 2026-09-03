@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f3b1bd" />
+    <meta name="description" content="Invitación al Baby Shower de Abigail Eliana" />
+    <title>Baby Shower de Abigail Eliana</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        margin: 0;
+        min-height: 100%;
+        background: #f3b1bd;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+      }
+
+      .invitation {
+        position: relative;
+        width: min(100%, 760px);
+        line-height: 0;
+        box-shadow: 0 0 32px rgb(120 63 75 / 22%);
+      }
+
+      .invitation img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+
+      .click-area {
+        position: absolute;
+        display: block;
+        border-radius: 12px;
+        cursor: pointer;
+        -webkit-tap-highlight-color: rgb(255 255 255 / 25%);
+      }
+
+      .click-area:focus-visible {
+        outline: 4px solid #b74869;
+        outline-offset: 3px;
+        background: rgb(255 255 255 / 12%);
+      }
+
+      .location {
+        left: 55.5%;
+        top: 67.2%;
+        width: 39.5%;
+        height: 12.1%;
+      }
+
+      .confirmation {
+        left: 32.5%;
+        top: 82.5%;
+        width: 37%;
+        height: 5.2%;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="invitation">
+      <img
+        src="invitacion.png"
+        alt="Invitación al Baby Shower de Abigail Eliana, domingo 27 de septiembre a las 4:00 p. m."
+      />
+
+      <a
+        class="click-area location"
+        href="https://maps.app.goo.gl/PuswS4wi7HczxbzG6"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Abrir la ubicación en Google Maps"
+        title="Ver ubicación en Google Maps"
+      ></a>
+
+      <a
+        class="click-area confirmation"
+        href="https://wa.me/51959394806?text=Confirmo%20mi%20asistencia%20al%20Baby%20Shower"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Confirmar asistencia por WhatsApp"
+        title="Confirmar asistencia por WhatsApp"
+      ></a>
+    </main>
+  </body>
+</html>
